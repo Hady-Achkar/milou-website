@@ -5,14 +5,16 @@ export default function Home() {
   const age = currentYear - 2005;
 
   const showHappyBirthday = () => {
-    if (new Date().getMonth() === 0 && new Date().getDate() === 29) {
-      return "Happy Birthday Milou 🎂";
+    if (
+      (new Date().getMonth() === 0 && new Date().getDate() === 29) ||
+      new Date().getDate() === 30
+    ) {
+      return "Happy Birthday Milou";
     } else {
       return "Milou";
     }
   };
 
-  console.log(new Date().getMonth());
   return (
     <main className="flex bg-rose-500 min-h-screen justify-center items-center text-center p-4">
       <div className="flex flex-col space-y-10 items-center">
