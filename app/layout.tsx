@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const silkscreen = Silkscreen({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "Milou's Website",
+  title: "Milou's",
   description: "Made with love",
 };
 
@@ -35,6 +35,8 @@ export default function RootLayout({
           `,
           }}
         />
+
+        <link rel="icon" href="/public/watermelon.svg" />
       </Head>
       <body className={silkscreen.className}>{children}</body>
     </html>
