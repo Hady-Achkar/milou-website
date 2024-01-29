@@ -6,7 +6,7 @@ export default function Home() {
 
   const showHappyBirthday = () => {
     if (new Date().getMonth() === 0 && new Date().getDate() === 29) {
-      return "Happy Birthday Milou";
+      return "Happy Birthday Milou 🎂";
     } else {
       return "Milou";
     }
