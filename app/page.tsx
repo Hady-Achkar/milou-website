@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+export const revalidate = 3600;
 export default function Home() {
   const currentYear = new Date().getFullYear();
   const age = currentYear - 2005;
