@@ -10,7 +10,6 @@ const silkscreen = Silkscreen({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Milou's",
-  description: "Made with love",
 };
 
 export default function RootLayout({
