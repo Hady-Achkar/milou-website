@@ -20,21 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-YQFNL613KH`}
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YQFNL613KH');
-          `,
-          }}
-        />
-
         <link rel="icon" href="/public/watermelon.svg" />
       </Head>
       <body className={silkscreen.className}>{children}</body>
